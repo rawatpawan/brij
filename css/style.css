@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+  }
+  /* Default font size for 1920px width */
+  :root {
+    --base-font-size: 16px; /* Default base font size for 1920px */
+  }
+  
+  /* Set font size for 1920px */
+  html {
+    font-size: 16px; /* 1rem = 16px by default */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: var(--base-font-size); /* This will make 1rem = 16px */
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  
+  /* Set Montserrat for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Font for all headings */
+  }
+  
+  /* Bold text for headings or any element */
+  h1, h2, h3, h4, h5, h6, .bold-text {
+    font-weight: 900; /* Bold weight */
+    color: #000000;
+  }
+  
+  /* Normal text for paragraphs */
+  p {
+    font-family: 'Open Sans', sans-serif;/* Font for paragraphs */
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: none
+  }
+  li {
+    list-style: none;
+  }
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  
+  }
+  
+  .owl-carousel{
+    position: relative;
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -4rem;
+     background: none;
+    
+  }
+  .owl-carousel .owl-nav button.owl-prev:hover {
+     background: none; 
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -4rem;
+     background: none;
+  }
+  .owl-carousel .owl-nav button.owl-next:hover {
+    background: none; 
+  }
+    
+  
+  
+  /* Mobile menu style starts here  */
+  
+  .mobileupper{
+    overflow-x: hidden;
+  }
+  
+  .mobileupper .col4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobileupper img{
+    height: 50%;
+  }
+  
+  .mobileupper a{
+    color: #808184;
+    font-weight: 700;
+    font-size: .9rem;
+  }
+  .overlay-slidedown {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+    transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #808184;
+  }
+  .overlay .overlay-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    z-index: 100;
+  }
+  .overlay-slidedown.open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    overflow-y: scroll;
+  }
+  .overlay ul {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .overlay ul a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1rem;
+  }
+  .overlay ul .dropdown-menu a{
+    color: #000;
+  }
+  
+  .light {
+      font-weight: 300;
+  }
+
+  .regular {
+      font-weight: 400;
+  }
+
+  .medium {
+      font-weight: 500;
+  }
+
+  .semibold {
+      font-weight: 600;
+  }
+
+  .bold {
+      font-weight: 700;
+  }
+
+  .extrabold {
+      font-weight: 800;
+  }
+  .italic-text {
+      font-style: italic;
+  }
+
+  /* Mobile menu style ENDs here  */
+  
+  
+  /* COMMON CSS ENDS  */
+  .container {
+      max-width: 1760px;  
+    }
+
+  .upperMenu{
+    background: #808184; 
+    padding: 5px 0;
+  }
+  .upperMenu a {
+    color: #e5e6e7;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .upperMenu .left{
+    display: flex;
+    align-items: center;
+  }
+  .upperMenu .left .homea{
+    border-right: 2px solid #e5e6e7;
+    padding-right: 1rem;
+  } 
+  .menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .social-list {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .social-list a {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #e5e6e7;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .social-list a:hover {
+    background: rgba(128,129,132,0.08);
+    transform: translateY(-3px);
+  }
+
+  .contact-list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #e5e6e7;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .contact-list i {
+    font-size: 1rem;
+    color: #e5e6e7;
+  }
+  /* .mainMenu{
+    padding: 1rem 0;
+  } */
+
+   .menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 12px 0;
+  }
+
+
+  /* RIGHT area layout */
+  .mainMenu .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem; 
+  }
+
+  /* nav list (inline) */
+  .nav-list {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-list a {
+    color: #000000;
+    font-size: 1rem;          
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: color .15s ease;
+    text-transform: uppercase;
+  }
+
+  .nav-list a:hover {
+    color: #00a551;
+  }
+  .active {
+    color: #00a551;
+  }
+  
+  /* Enquiry button */
+  .enquiry-btn {
+    display: inline-block;
+    background: #000000; 
+    color: #ffffff;       
+    padding: .5rem 1rem;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: transform .12s ease, opacity .12s ease;
+  }
+
+  .enquiry-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+  }
+
+  .header-slider .item img {
+      width: 100%;
+      height: auto;    
+      object-fit: cover; 
+  }
+
+  #aboutUs{
+    background: #f0f1f1;
+  }
+
+  .tagLing{
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: #000;
+    }
+  .firstcol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heading-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+  }
+
+  /* text */
+  .section-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;       
+    color: #000;
+    margin: 0 15px;
+    white-space: nowrap;
+  }
+
+  
+  .heading-line .line {
+    height: 2px;
+    background: #000000;
+  }
+
+  
+  .heading-line .line.left {
+    width: 200px;
+  }
+
+  
+  .heading-line .line.right {
+    width: 200px;   
+  }
+
+
+  .aboutusbg{
+    background: url(../images/aboutusbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .headabout{
+    color: #000000;
+    font-size: 3.1rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .headabout strong{
+    color: #2b2b2a;
+  }
+
+
+
+  /** RESPONSIVE MEDIA QUERY **/
+  
+  /* Small screens, such as smartphones */
+  @media (max-width: 767px) {
+    html {
+      font-size: calc(16px * 0.8); /* Smaller font for smaller screens */
+    }
+    .desktopMenu {
+      display: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      display: none;
+    }
+
+  
+  }
+  
+  /* Tablets in portrait mode */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: calc(16px * 0.85); /* Slightly smaller font for tablets */
+    }
+    .desktopMenu{
+      display: none;
+    }
+    .container{
+      width: 90%;
+    }
+    
+
+  
+  }
+  
+  /* Tablets in landscape mode and small desktops */
+  @media (min-width: 1024px) and (max-width: 1399px) {
+    html {
+      font-size: calc(16px * 0.9); /* Base font size for small desktops */
+    }
+    .mobileMenu{
+      display: none;
+    }
+    .container{
+      width: 90%;
+    }
+    .website-logo{
+      width: 80%;
+    }
+     .nav-list {
+      gap: 12px;              
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .nav-list a {
+      font-size: 0.92rem;      
+      padding: 4px 2px;
+      white-space: nowrap;
+    }
+  }
+  
+  /* Standard desktops and laptops */
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    html {
+      font-size: calc(16px * 0.95); /* Larger font size for standard desktops */
+    }
+    .mobileMenu{
+      display: none;
+    }
+
+    .container{
+      width: 90%;
+    }
+
+  }
+  
+  /* Large screens and high-resolution displays */
+  @media (min-width: 1920px) {
+    html {
+      font-size: 16px; /* 1rem = 16px for 1920px screens */
+    }
+    .mobileMenu{
+      display: none;
+    }
+
+  }
+  
