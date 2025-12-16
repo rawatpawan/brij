@@ -82,4 +82,65 @@ $(document).ready(function() {
       customerOwl.trigger('prev.owl.carousel');
     });
 
+
+    // Industries carousel
+    var industriesOwl = $('.industries-carousel');
+
+    industriesOwl.owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 1000,
+      margin: 0,
+      dots: false,
+      nav: false,
+      responsive: {
+        0: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        1024: {
+          items: 4
+        }
+      }
+    });
+
+    $('.industries-next').click(function () {
+      industriesOwl.trigger('next.owl.carousel');
+    });
+
+    $('.industries-prev').click(function () {
+      industriesOwl.trigger('prev.owl.carousel');
+    });
+
+
+    // Testimonial Carousel
+    $('.testimonial-carousel').owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      dots: false,
+      nav: false,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+    });
+
+
+    // Video Testimonial Carousel
+    $('.video-carousel').owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 1000,
+      dots: false,
+      nav: false,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+    });
+
 });
