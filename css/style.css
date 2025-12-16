@@ -396,7 +396,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
   }
 
   .headabout{
@@ -408,6 +408,168 @@
   }
   .headabout strong{
     color: #2b2b2a;
+  }
+  .certified{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0px !important;
+  }
+
+  #whychoosebrij{
+    background: url(../images/whychoosebrij.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #whychoosebrij .italic-text{
+    font-size: 1.3rem;
+  }
+
+  .sectionHead{
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+   
+  }
+
+  .sectionSubHeading{
+    color: #000000;
+    text-align: center;
+    font-size: 3.1rem;
+    font-weight: 500;
+  }
+
+  .keypoints {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .keypoints-item {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .keypoints-item h3{
+    font-weight: 700;
+    color: #eb2024;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+  .keypoints-item p{
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+  }
+
+
+
+
+  .customer-carousel-wrapper {
+    position: relative;
+    padding: 0 50px; /* arrow space */
+  }
+
+  /* image style */
+  .customer-item img {
+    width: 100%;
+    /* border: 1px solid #cfcfcf;  */
+    padding: 5px;
+    background: #fff;
+  }
+
+  /* arrows */
+  .customer-prev,
+  .customer-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    border: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+    z-index: 10;
+  }
+
+  .customer-prev {
+    left: 0;
+  }
+
+  .customer-next {
+    right: 0;
+  }
+
+  .customer-prev:hover,
+  .customer-next:hover {
+    background: #f5f5f5;
+  }
+
+  .showMoreButton{
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    padding: 5px 1.5rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .showMoreButton:hover{
+    background: #000000;
+    color: #ffffff;
+  }
+
+  #specialisation{
+    background: url(../images/specialisation.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  #specialisation .sectionHead,
+  #specialisation .sectionSubHeading{
+    color: #ffffff;
+  }
+
+  .specialisation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .specialisation-item {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .specialisation-item h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .specialisation-item p{
+    color: #fff;
+    font-size: 1rem;
   }
 
 
@@ -426,7 +588,9 @@
     .owl-carousel .owl-nav button.owl-next {
       display: none;
     }
-
+  .keypoints {
+    grid-template-columns: repeat(2, 1fr);
+  }
   
   }
   
@@ -441,7 +605,9 @@
     .container{
       width: 90%;
     }
-    
+    .keypoints {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
   
   }

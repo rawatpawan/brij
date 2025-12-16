@@ -50,4 +50,36 @@ $(document).ready(function() {
       animateIn: 'fadeIn',
     });
 
+
+    var customerOwl = $('.customer-carousel');
+
+    customerOwl.owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000, 
+      autoplaySpeed: 1200,
+      margin: 20,
+      dots: false,
+      nav: false,
+      responsive: {
+        0: {
+          items: 2
+        },
+        768: {
+          items: 4
+        },
+        1200: {
+          items: 6
+        }
+      }
+    });
+
+    $('.customer-next').click(function () {
+      customerOwl.trigger('next.owl.carousel');
+    });
+
+    $('.customer-prev').click(function () {
+      customerOwl.trigger('prev.owl.carousel');
+    });
+
 });
