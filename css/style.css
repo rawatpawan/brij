@@ -1084,6 +1084,10 @@
     .industries-title {
       font-size: 0.85rem;
       padding: 10px 5px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
       #fullwide-section {
         flex-direction: column;
@@ -1158,6 +1162,13 @@
       padding: 20px;
       padding-top: 60px;
     }
+    .customer-prev,
+    .customer-next {
+      display: none;
+    }
+    .sectionSubHeading{
+      font-size: 2.1rem;
+    }
   }
   
   /* Tablets in portrait mode */
@@ -1193,6 +1204,10 @@
     .industries-title {
       font-size: 0.85rem;
       padding: 10px 5px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
         .testimonial-left {
       padding-right: 0;
@@ -1274,6 +1289,13 @@
     #mainFooter {
       padding: 20px;
       padding-top: 60px;
+    }
+    .customer-prev,
+    .customer-next {
+      display: none;
+    }
+    .sectionSubHeading{
+      font-size: 2.1rem;
     }
   }
   

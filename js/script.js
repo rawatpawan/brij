@@ -63,7 +63,7 @@ $(document).ready(function() {
       nav: false,
       responsive: {
         0: {
-          items: 2
+          items: 3
         },
         768: {
           items: 4
