@@ -392,7 +392,7 @@
 
 
   .aboutusbg{
-    background: url(../images/aboutusbg.jpg);
+    background: url("../images/aboutusbg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -419,7 +419,7 @@
   }
 
   #whychoosebrij{
-    background: url(../images/whychoosebrij.jpg);
+    background: url("../images/whychoosebrij.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -536,7 +536,7 @@
   }
 
   #specialisation{
-    background: url(../images/specialisation.jpg);
+    background: url("../images/specialisation.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -664,7 +664,7 @@
 
 
   #esolutions{
-    background: url(../images/esolutions.jpg);
+    background: url("../images/esolutions.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -728,7 +728,7 @@
   /* Left side */
   .fullwide-left {
     flex: 0 0 50%;
-    background-image: url("../images/forest.jpg"); /* change image path */
+    background-image: url("../images/forest.jpg"); 
     background-size: cover;
     background-position: center;
   }
@@ -938,6 +938,7 @@
     color: #fff;
     margin-bottom: 25px;
     text-transform: uppercase;
+    font-family: 'Open Sans';
   }
 
   .footer-links {
@@ -1056,6 +1057,186 @@
     margin: 0;
   }
 
+
+  .chatbot{
+      position: fixed;
+      bottom: 0;
+      right: 1%;
+      bottom: 5%;
+      z-index: 100;
+  }
+  .chatbot img{
+    width: 90%;
+  }
+
+  .page-header {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+  }
+  .page-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .page-header h2{
+    color: #ffffff;
+    text-transform:uppercase;
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 20;
+    left: 5%;
+    bottom: 5%;
+  }
+  #founderSection p{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .brandTag{
+    font-size: 1.3rem !important;
+    font-weight: 400 !important;
+    color: #e22228;
+  }
+
+  .fodate{
+    font-weight: 700 !important;
+    color: #000000;
+    font-size: 1.5rem !important;
+  }
+
+  #founderSection h3{
+    font-size: 2.8rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  #founderSection .col1{
+    padding-right: 3rem;
+  }
+  #founderSection .col2{
+    padding: 0 3rem;
+  }
+  .teams{
+    background: url("../images/teamsbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .profile-grid{
+    display: grid;
+    grid-template-columns: 16.66% 50% 33.33%;
+    align-items: center;
+    align-items: stretch;
+  }
+  .profile-grid > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+  }
+  .teams p {
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: justify;
+  }
+
+  .name-title{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700 !important;
+    font-size: 1.75rem !important;
+  }
+  .handshake{
+    width: 80%;
+  }
+  .profile-col-4{
+    padding: 1.5rem;
+  }
+  .profile-col-4 h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .profile-col-4 p{
+    color: #ffffff;
+  }
+
+  .profile-grid-2{
+    display: grid;
+    grid-template-columns: 16.66% 1fr; 
+    align-items: stretch;
+  }
+
+ 
+  .profile-grid-2 > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+  }
+  .borderLIne {
+    padding: 3rem;
+    padding-left: 0px;
+    margin-left: 3rem;
+    border-bottom: 1px solid #105b4a;
+  }
+
+  #coreValue{
+    background: url(../images/whychoosebrij.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #coreValue ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  #coreValue ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #coreValue h3 {
+      font-weight: 700;
+      color: #eb2024;
+      font-size: 1.2rem;
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+  .journey{
+    width: 100%;
+  }
+
+  #infra{
+    background: #d8d8d8;
+  }
+  .infra-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;           
+    padding: 0;       
+    background: #f6f6f6;
+    align-items: stretch;   
+  }
+
+  .infra-item{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .count{
+    width: 60%;
+  }
+
+
   /** RESPONSIVE MEDIA QUERY **/
   
   /* Small screens, such as smartphones */
@@ -1168,6 +1349,53 @@
     }
     .sectionSubHeading{
       font-size: 2.1rem;
+    }
+    #founderSection .col1{
+      padding-right: 1rem;
+    }
+    #founderSection .col2{
+      margin-top: 1rem;
+    }
+    .hindi{
+      width: 50%;
+    }
+    .fodate{
+      font-size: 1rem !important;
+    }
+    #founderSection h3{
+      font-size: 2rem;
+    }
+    .profile-grid{
+          grid-template-columns: 100%;
+    }
+    .profile-col-2 img{
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+    .borderLIne{
+      border: 0;
+      padding:1rem;
+      margin-left: 0rem;
+    }
+    .profile-grid-2{
+          grid-template-columns: 100%;
+    }
+    .profile-left img{
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+    .borderLIne{
+      border: 0;
+      padding:1rem;
+      margin-left: 0rem;
+    }
+    #coreValue ul{
+      display: block;
+    }
+    #coreValue img{
+      width: 10%;
     }
   }
   
@@ -1330,6 +1558,9 @@
 
     .vertical-text {
       font-size: 2rem;
+    }
+    .profile-col-4 h3{
+      font-size: 1.2rem;
     }
   }
   
